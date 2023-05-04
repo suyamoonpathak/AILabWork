@@ -1,0 +1,7 @@
+teacher(saleh).
+teacher(nora).
+father(saleh,jaber).
+father(hamza,saleh).
+mother(nora,jaber).
+parent(p1,p2):-father(p1,p2);mother(p1,p2).
+grandparent(p1,p2):-parent(p3,p2),parent(p1,p3).
